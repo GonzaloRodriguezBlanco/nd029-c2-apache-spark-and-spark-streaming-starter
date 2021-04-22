@@ -68,7 +68,7 @@ services:
       REDIS_PORT: 6379
       REDIS_DB: 0
       KAFKA_BROKER: kafka:19092
-      KAFKA_RISK_TOPIC: your-topic-here
+      KAFKA_RISK_TOPIC: customer-risk
     depends_on:
       - "kafka"
       - "redis"      
