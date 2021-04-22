@@ -146,7 +146,7 @@ docker-compose up
 - To monitor the progress of data generated, from a terminal type: 
 
 ```
-docker logs -f nd029-c2-apache-spark-and-spark-streaming_stedi_1
+docker logs -f nd029-c2-apache-spark-and-spark-streaming-starter_stedi_1
 ```
 
 
