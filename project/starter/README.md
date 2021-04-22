@@ -27,13 +27,13 @@ The STEDI data science team has configured some real-time data sources using Kaf
 - To connect to the redis instance, from the terminal connect to Redis: 
 
 ```
-docker exec -it nd029-c2-apache-spark-and-spark-streaming_redis_1 redis-cli
+docker exec -it nd029-c2-apache-spark-and-spark-streaming-starter_redis_1 redis-cli
 ```
 
 - Type:
 
 ```
-zrange customer 0 -1
+zrange Customer 0 -1
 ```
 
 - Locate the the customer you created in the output
@@ -41,7 +41,7 @@ zrange customer 0 -1
 - In another terminal run this command to start monitoring the kafka topic:
 
 ```
-docker exec -it nd029-c2-apache-spark-and-spark-streaming_kafka_1 kafka-console-consumer --bootstrap-server localhost:9092 --topic redis-server
+docker exec -it nd029-c2-apache-spark-and-spark-streaming-starter_kafka_1 kafka-console-consumer --bootstrap-server localhost:9092 --topic redis-server
 ```
 
 - Back in the redis-cli, type: 
