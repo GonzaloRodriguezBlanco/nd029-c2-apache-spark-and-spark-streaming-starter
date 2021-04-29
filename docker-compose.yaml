@@ -37,27 +37,27 @@ services:
     depends_on:
       - "zookeeper"
 
-  banking-simulation:
-    image: gcr.io/simulation-images/banking-simulation
-    environment:
-      REDIS_HOST: redis
-      REDIS_PORT: 6379
-      REDIS_DB: 0
-      KAFKA_BROKER: kafka:19092
-    depends_on:
-      - "kafka"
-      - "redis"
+#  banking-simulation:
+#    image: gcr.io/simulation-images/banking-simulation
+#    environment:
+#      REDIS_HOST: redis
+#      REDIS_PORT: 6379
+#      REDIS_DB: 0
+#      KAFKA_BROKER: kafka:19092
+#    depends_on:
+#      - "kafka"
+#      - "redis"
 
-  trucking-simulation:
-    image: gcr.io/simulation-images/trucking-simulation
-    environment:
-      REDIS_HOST: redis
-      REDIS_PORT: 6379
-      REDIS_DB: 0
-      KAFKA_BROKER: kafka:19092
-    depends_on:
-      - "kafka"
-      - "redis"      
+#  trucking-simulation:
+#    image: gcr.io/simulation-images/trucking-simulation
+#    environment:
+#      REDIS_HOST: redis
+#      REDIS_PORT: 6379
+#      REDIS_DB: 0
+#      KAFKA_BROKER: kafka:19092
+#    depends_on:
+#      - "kafka"
+#      - "redis"
 
   stedi:
     image: gcr.io/simulation-images/stedi
