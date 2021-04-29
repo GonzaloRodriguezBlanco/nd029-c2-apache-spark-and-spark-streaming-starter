@@ -18,7 +18,7 @@ docker ps
 
 - Click start, then add steps until you reach 30 and the timer has stopped
 
-- Repeat this three times, and you will receive a risk score
+- Repeat this four times, and you will receive a risk score
 
 # Analyzing the Data
 
